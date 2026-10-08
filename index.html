@@ -1,62 +1,365 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DevFlow AI — AI-powered development workspace</title>
-  <meta name="description" content="DevFlow AI helps developers plan, build and manage software projects faster with AI.">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DevFlow AI — Build software with less friction</title>
+
+    <meta
+        name="description"
+        content="DevFlow AI is an AI-powered development workspace that helps developers move from ideas to structured software projects."
+    >
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <nav class="nav">
-    <a class="brand" href="index.html"><span>◆</span> DevFlow AI</a>
+
+<nav class="nav">
+    <a class="brand" href="index.html">
+        <span>◆</span>
+        DevFlow AI
+    </a>
+
     <div class="nav-links">
-      <a href="#features">Features</a>
-      <a href="#about">About</a>
-      <a class="btn small" href="login.html">Open Workspace</a>
+        <a href="#features">Features</a>
+        <a href="#workflow">How it works</a>
+        <a href="#about">About</a>
+        <a class="btn small" href="login.html">Try Demo</a>
     </div>
-  </nav>
+</nav>
 
-  <main>
+<main>
+
+    <!-- HERO -->
     <section class="hero">
-      <div class="badge">AI-powered developer workspace</div>
-      <h1>Build software<br><span>with less friction.</span></h1>
-      <p>DevFlow AI helps developers turn ideas into structured projects, APIs and production-ready tasks — faster.</p>
-      <div class="actions">
-        <a class="btn" href="login.html">Try the workspace →</a>
-        <a class="btn ghost" href="#features">Explore features</a>
-      </div>
-      <div class="hero-card">
-        <div class="window-top"><i></i><i></i><i></i><span>devflow.ai / workspace</span></div>
-        <div class="terminal">
-          <p><span class="muted">$</span> devflow create api --name billing</p>
-          <p class="success">✓ Project structure generated</p>
-          <p class="success">✓ API endpoints planned</p>
-          <p class="success">✓ Development tasks created</p>
-          <p><span class="muted">$</span> ready to build_</p>
+
+        <div class="badge">
+            ✦ AI-powered development workspace
         </div>
-      </div>
+
+        <h1>
+            From idea<br>
+            <span>to software.</span>
+        </h1>
+
+        <p>
+            DevFlow AI helps developers turn product ideas into
+            structured projects, technical plans, APIs and actionable
+            development tasks — all in one workspace.
+        </p>
+
+        <div class="actions">
+            <a class="btn" href="login.html">
+                Try the demo →
+            </a>
+
+            <a class="btn ghost" href="#features">
+                Explore DevFlow AI
+            </a>
+        </div>
+
+        <div class="demo-note">
+            <span>●</span>
+            Interactive prototype — no account required
+        </div>
+
+        <!-- PRODUCT PREVIEW -->
+        <div class="hero-card">
+
+            <div class="window-top">
+                <div class="window-dots">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </div>
+
+                <span>devflow.ai / workspace</span>
+            </div>
+
+            <div class="workspace-preview">
+
+                <aside>
+                    <div class="mini-logo">◆</div>
+
+                    <div class="side-item active">
+                        <span>⌂</span> Overview
+                    </div>
+
+                    <div class="side-item">
+                        <span>▣</span> Projects
+                    </div>
+
+                    <div class="side-item">
+                        <span>✓</span> Tasks
+                    </div>
+
+                    <div class="side-item">
+                        <span>⌘</span> API Planner
+                    </div>
+                </aside>
+
+                <div class="preview-content">
+
+                    <div class="preview-header">
+                        <div>
+                            <small>PROJECT WORKSPACE</small>
+                            <h3>Billing API</h3>
+                        </div>
+
+                        <span class="status">● Active</span>
+                    </div>
+
+                    <div class="preview-grid">
+
+                        <div class="preview-box">
+                            <small>PROJECT PLAN</small>
+                            <strong>12 tasks</strong>
+                            <div class="progress">
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <div class="preview-box">
+                            <small>API ENDPOINTS</small>
+                            <strong>8 planned</strong>
+                            <p>REST architecture</p>
+                        </div>
+
+                        <div class="preview-box">
+                            <small>AI ASSISTANT</small>
+                            <strong>Ready</strong>
+                            <p>Technical planning</p>
+                        </div>
+
+                    </div>
+
+                    <div class="terminal">
+
+                        <p>
+                            <span class="muted">$</span>
+                            devflow create api --name billing
+                        </p>
+
+                        <p class="success">
+                            ✓ Project structure generated
+                        </p>
+
+                        <p class="success">
+                            ✓ API endpoints planned
+                        </p>
+
+                        <p class="success">
+                            ✓ Development tasks created
+                        </p>
+
+                        <p>
+                            <span class="muted">$</span>
+                            ready to build_
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
     </section>
 
+
+    <!-- FEATURES -->
     <section id="features" class="section">
-      <div class="eyebrow">FEATURES</div>
-      <h2>Everything starts in one workspace.</h2>
-      <div class="grid">
-        <article><div class="icon">✦</div><h3>AI Project Assistant</h3><p>Turn a product idea into an organized technical plan and actionable development tasks.</p></article>
-        <article><div class="icon">⌘</div><h3>API Planning</h3><p>Design endpoints, resources and data structures before writing the implementation.</p></article>
-        <article><div class="icon">✓</div><h3>Developer Workflow</h3><p>Keep projects, tasks and technical notes together in a clean workspace.</p></article>
-      </div>
+
+        <div class="eyebrow">CORE CAPABILITIES</div>
+
+        <h2>
+            A focused workspace for<br>
+            modern software development.
+        </h2>
+
+        <p class="section-intro">
+            DevFlow AI is designed to reduce the friction between
+            an initial idea and an organized development workflow.
+        </p>
+
+        <div class="grid">
+
+            <article>
+                <div class="icon">✦</div>
+
+                <h3>AI Project Assistant</h3>
+
+                <p>
+                    Turn a product idea into a structured technical
+                    plan and actionable development tasks.
+                </p>
+            </article>
+
+
+            <article>
+                <div class="icon">⌘</div>
+
+                <h3>API Planning</h3>
+
+                <p>
+                    Define endpoints, resources and data structures
+                    before implementation begins.
+                </p>
+            </article>
+
+
+            <article>
+                <div class="icon">✓</div>
+
+                <h3>Developer Workflow</h3>
+
+                <p>
+                    Keep projects, tasks and technical notes organized
+                    inside one focused workspace.
+                </p>
+            </article>
+
+        </div>
+
     </section>
 
+
+    <!-- WORKFLOW -->
+    <section id="workflow" class="workflow">
+
+        <div class="eyebrow">HOW IT WORKS</div>
+
+        <h2>
+            Move from thinking<br>
+            to building.
+        </h2>
+
+        <div class="steps">
+
+            <div class="step">
+                <span>01</span>
+
+                <div>
+                    <h3>Describe your idea</h3>
+
+                    <p>
+                        Start with a product concept or software problem
+                        you want to solve.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="step">
+                <span>02</span>
+
+                <div>
+                    <h3>Structure the project</h3>
+
+                    <p>
+                        Organize the concept into technical components,
+                        APIs and development tasks.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="step">
+                <span>03</span>
+
+                <div>
+                    <h3>Start building</h3>
+
+                    <p>
+                        Use the resulting workspace as a practical
+                        starting point for implementation.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
     <section id="about" class="about">
-      <div>
-        <div class="eyebrow">ABOUT DEVFLOW AI</div>
-        <h2>A simpler way to move from idea to software.</h2>
-      </div>
-      <p>DevFlow AI is an early-stage product concept focused on helping independent developers and small teams plan and build software with practical AI assistance.</p>
-    </section>
-  </main>
 
-  <footer>© 2026 DevFlow AI · Early-stage product</footer>
+        <div>
+
+            <div class="eyebrow">
+                ABOUT DEVFLOW AI
+            </div>
+
+            <h2>
+                Making software development
+                more structured.
+            </h2>
+
+        </div>
+
+        <div class="about-copy">
+
+            <p>
+                DevFlow AI is an early-stage product concept focused
+                on helping independent developers and small teams
+                organize software development with practical AI assistance.
+            </p>
+
+            <p>
+                The project is currently presented as an interactive
+                prototype while the underlying product experience
+                continues to evolve.
+            </p>
+
+            <a class="text-link" href="login.html">
+                Explore the prototype →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+    <section class="cta">
+
+        <div class="eyebrow">EARLY PROTOTYPE</div>
+
+        <h2>
+            See where DevFlow AI<br>
+            can take your next idea.
+        </h2>
+
+        <p>
+            Explore the interactive workspace and experience
+            the current product direction.
+        </p>
+
+        <a class="btn" href="login.html">
+            Open the demo →
+        </a>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div>
+        <strong>◆ DevFlow AI</strong>
+        <span>AI-powered development workspace</span>
+    </div>
+
+    <span>
+        © 2026 DevFlow AI · Early-stage prototype
+    </span>
+
+</footer>
+
+
 </body>
 </html>
