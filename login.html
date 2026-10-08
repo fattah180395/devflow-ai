@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Sign in — DevFlow AI</title><link rel="stylesheet" href="style.css">
+</head>
+<body class="center">
+  <div class="auth-card">
+    <a class="brand" href="index.html"><span>◆</span> DevFlow AI</a>
+    <h1>Welcome back</h1>
+    <p>Enter the demo workspace.</p>
+    <form onsubmit="event.preventDefault(); location.href='dashboard.html';">
+      <label>Email</label><input type="email" value="founder@devflow.ai" required>
+      <label>Password</label><input type="password" value="demo1234" required>
+      <button class="btn full" type="submit">Sign in →</button>
+    </form>
+    <small>Demo authentication — no real account is created.</small>
+  </div>
+</body>
+</html>
